@@ -8,9 +8,12 @@ export default defineUserConfig({
   title: 'Coyote Game Hub',
   description: '郊狼战败惩罚控制器',
 
-  theme: defaultTheme({
-    logo: 'images/screenshot-widget.png',
+  head: [
+    ['link', { rel: 'icon', href: '/public/favicon.png' }]
+  ],
 
+  theme: defaultTheme({
+    logo: 'public/screenshot-widget.png',
     navbar: [
       '/',
       '/get-started',

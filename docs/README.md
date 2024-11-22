@@ -1,7 +1,7 @@
 ---
 home: true
 title: 主页
-heroImage: images/screenshot-widget.png
+heroImage: public/screenshot-widget.png
 actions:
   - text: 开始使用
     link: /get-started.html
