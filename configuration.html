@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.18" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme')
+      const systemDarkMode =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (userMode === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (userMode === 'dark' || systemDarkMode) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <title>配置文件 | Coyote Game Hub</title><meta name="description" content="郊狼战败惩罚控制器">
+    <link rel="preload" href="/assets/style-DI2UJfpv.css" as="style"><link rel="stylesheet" href="/assets/style-DI2UJfpv.css">
+    <link rel="modulepreload" href="/assets/app-CAXEhSqr.js"><link rel="modulepreload" href="/assets/configuration.html-DJQddu7I.js">
+    <link rel="prefetch" href="/assets/index.html-DN8cucZ3.js" as="script"><link rel="prefetch" href="/assets/api.html-BARhq9tg.js" as="script"><link rel="prefetch" href="/assets/get-started.html-7ILcoOnC.js" as="script"><link rel="prefetch" href="/assets/404.html-MWslLboS.js" as="script"><link rel="prefetch" href="/assets/setupDevtools-7MC2TMWH-Dzh8m5NU.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container external-link-icon" vp-container><!--[--><header class="vp-navbar" vp-navbar><div class="vp-toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a class="route-link" href="/"><img class="vp-site-logo" src="/images/screenshot-widget.png" alt="Coyote Game Hub"><span class="vp-site-name vp-hide-mobile" aria-hidden="true">Coyote Game Hub</span></a></span><div class="vp-navbar-items-wrapper" style=""><!--[--><!--]--><nav class="vp-navbar-items vp-hide-mobile" aria-label="site navigation"><!--[--><div class="vp-navbar-item"><a class="route-link auto-link" href="/" aria-label="主页"><!---->主页<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/get-started.html" aria-label="开始使用"><!---->开始使用<!----></a></div><div class="vp-navbar-item"><a class="route-link route-link-active auto-link" href="/configuration.html" aria-label="配置文件"><!---->配置文件<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/api.html" aria-label="HTTP API"><!---->HTTP API<!----></a></div><div class="vp-navbar-item"><a class="auto-link external-link" href="https://cgh-download.hyperz.top/%E6%B8%B8%E6%88%8F%E6%8F%92%E4%BB%B6" aria-label="下载插件" rel="noopener noreferrer" target="_blank"><!---->下载插件<!----></a></div><!--]--></nav><!--[--><!--]--><button type="button" class="vp-toggle-color-mode-button" title="toggle color mode"><svg class="light-icon" viewbox="0 0 32 32" style=""><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg class="dark-icon" viewbox="0 0 32 32" style="display:none;"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="vp-sidebar-mask"></div><!--[--><aside class="vp-sidebar" vp-sidebar><nav class="vp-navbar-items" aria-label="site navigation"><!--[--><div class="vp-navbar-item"><a class="route-link auto-link" href="/" aria-label="主页"><!---->主页<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/get-started.html" aria-label="开始使用"><!---->开始使用<!----></a></div><div class="vp-navbar-item"><a class="route-link route-link-active auto-link" href="/configuration.html" aria-label="配置文件"><!---->配置文件<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/api.html" aria-label="HTTP API"><!---->HTTP API<!----></a></div><div class="vp-navbar-item"><a class="auto-link external-link" href="https://cgh-download.hyperz.top/%E6%B8%B8%E6%88%8F%E6%8F%92%E4%BB%B6" aria-label="下载插件" rel="noopener noreferrer" target="_blank"><!---->下载插件<!----></a></div><!--]--></nav><!--[--><!--]--><ul class="vp-sidebar-items"><!--[--><li><p tabindex="0" class="vp-sidebar-item vp-sidebar-heading">配置文件 <!----></p><!----></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="vp-page"><!--[--><!--]--><div class="theme-default-content" vp-content><!--[--><!--]--><div><h1 id="配置文件" tabindex="-1"><a class="header-anchor" href="#配置文件"><span>配置文件</span></a></h1><p>配置位于程序根目录下，文件名：<code>config.yaml</code>。</p><h2 id="默认配置文件" tabindex="-1"><a class="header-anchor" href="#默认配置文件"><span>默认配置文件</span></a></h2><h3 id="本机使用" tabindex="-1"><a class="header-anchor" href="#本机使用"><span>本机使用</span></a></h3><div class="language-yaml line-numbers-mode" data-highlighter="prismjs" data-ext="yml" data-title="yml"><pre><code><span class="line"><span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">8920</span>                      <span class="token comment"># 服务器端口</span></span>
+<span class="line"><span class="token key atrule">host</span><span class="token punctuation">:</span> <span class="token string">&quot;0.0.0.0&quot;</span>                 <span class="token comment"># 监听地址</span></span>
+<span class="line"><span class="token key atrule">pulseConfigPath</span><span class="token punctuation">:</span> <span class="token string">&quot;pulse.yaml&quot;</span>   <span class="token comment"># 波形配置文件路径</span></span>
+<span class="line"><span class="token key atrule">openBrowser</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>               <span class="token comment"># 启动完成后自动打开浏览器</span></span>
+<span class="line"><span class="token key atrule">allowBroadcastToClients</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>   <span class="token comment"># 允许向所有已连接的客户端广播消息</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="搭建服务器时使用" tabindex="-1"><a class="header-anchor" href="#搭建服务器时使用"><span>搭建服务器时使用</span></a></h3><div class="language-yaml line-numbers-mode" data-highlighter="prismjs" data-ext="yml" data-title="yml"><pre><code><span class="line"><span class="token comment"># 使用服务器搭建服务时的样例配置文件</span></span>
+<span class="line"><span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">8920</span>                                  <span class="token comment"># 服务端口</span></span>
+<span class="line"><span class="token key atrule">host</span><span class="token punctuation">:</span> <span class="token string">&quot;0.0.0.0&quot;</span>                             <span class="token comment"># 监听IP地址</span></span>
+<span class="line"><span class="token key atrule">reverseProxy</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>                          <span class="token comment"># 是否使用反向代理，开启后会使用反向代理给出的客户端IP地址</span></span>
+<span class="line"><span class="token key atrule">webBaseUrl</span><span class="token punctuation">:</span> <span class="token string">&quot;https://www.example.com&quot;</span>       <span class="token comment"># 作为服务部署时，配置控制台的Base URL，格式：http://www.example.com:1234或https://www.example.com</span></span>
+<span class="line"><span class="token key atrule">webWsBaseUrl</span><span class="token punctuation">:</span> <span class="token string">&quot;wss://ws.example.com&quot;</span>        <span class="token comment"># 网页控制台的WebSocket Base URL，需要包含协议类型</span></span>
+<span class="line"><span class="token key atrule">clientWsBaseUrl</span><span class="token punctuation">:</span> <span class="token string">&quot;wss://ws.example.com&quot;</span>     <span class="token comment"># 客户端连接的WebSocket Base URL，需要包含协议类型</span></span>
+<span class="line"><span class="token key atrule">pulseConfigPath</span><span class="token punctuation">:</span> <span class="token string">&quot;pulse.yaml&quot;</span>               <span class="token comment"># 波形配置文件路径</span></span>
+<span class="line"><span class="token key atrule">allowBroadcastToClients</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>              <span class="token comment"># 允许向所有已连接的客户端广播消息（搭建公开服务时必须关闭）</span></span>
+<span class="line"><span class="token key atrule">hideWebUpdateNotification</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>             <span class="token comment"># 隐藏网页控制台的更新提示</span></span>
+<span class="line"><span class="token key atrule">siteNotifications</span><span class="token punctuation">:</span>                          <span class="token comment"># 站点通知</span></span>
+<span class="line">  <span class="token punctuation">-</span> <span class="token key atrule">title</span><span class="token punctuation">:</span> <span class="token string">&quot;欢迎使用CoyoteGameHub&quot;</span></span>
+<span class="line">    <span class="token key atrule">message</span><span class="token punctuation">:</span> <span class="token string">&quot;这是一个示例站点通知，你可以在配置文件中添加自己的通知，或者删除这个通知。&quot;</span></span>
+<span class="line">    <span class="token key atrule">ignoreId</span><span class="token punctuation">:</span> <span class="token string">&#39;site-welcome-1&#39;</span>             <span class="token comment"># 忽略ID，用户可以点击“忽略”按钮来忽略这个通知，忽略的通知将不再显示。建议每次更新通知时更改这个ID。</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="配置项" tabindex="-1"><a class="header-anchor" href="#配置项"><span>配置项</span></a></h2><div class="language-typescript line-numbers-mode" data-highlighter="prismjs" data-ext="ts" data-title="ts"><pre><code><span class="line"><span class="token keyword">type</span> <span class="token class-name">MainConfigType</span> <span class="token operator">=</span> <span class="token punctuation">{</span></span>
+<span class="line">    port<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span></span>
+<span class="line">    host<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span></span>
+<span class="line">    <span class="token doc-comment comment">/** 是否使用反向代理，开启后会使用反向代理的配置 */</span></span>
+<span class="line">    reverseProxy<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">boolean</span><span class="token punctuation">;</span></span>
+<span class="line">    <span class="token doc-comment comment">/** 作为服务部署时，配置控制台的Base URL，格式：http://www.example.com:1234或https://www.example.com */</span></span>
+<span class="line">    webBaseUrl<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span></span>
+<span class="line">    <span class="token doc-comment comment">/** 网页控制台的WebSocket Base URL，需要包含协议类型 */</span></span>
+<span class="line">    webWsBaseUrl<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span> <span class="token operator">|</span> <span class="token keyword">null</span><span class="token punctuation">;</span></span>
+<span class="line">    <span class="token doc-comment comment">/** DG-Lab客户端连接时的WebSocket URL */</span></span>
+<span class="line">    clientWsBaseUrl<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span> <span class="token operator">|</span> <span class="token keyword">null</span><span class="token punctuation">;</span></span>
+<span class="line">    <span class="token doc-comment comment">/** API的基础URL，不需要“api”，末尾需要“/”，某些游戏插件可能不支持HTTPS，需要配置HTTP接口 */</span></span>
+<span class="line">    apiBaseHttpUrl<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span></span>
+<span class="line">    <span class="token doc-comment comment">/** 波形配置文件路径 */</span></span>
+<span class="line">    pulseConfigPath<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span></span>
+<span class="line">    <span class="token doc-comment comment">/** 服务器启动后自动打开浏览器 */</span></span>
+<span class="line">    openBrowser<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">boolean</span><span class="token punctuation">;</span></span>
+<span class="line">    <span class="token doc-comment comment">/** 允许插件API向所有客户端发送指令 */</span></span>
+<span class="line">    allowBroadcastToClients<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">boolean</span><span class="token punctuation">;</span></span>
+<span class="line">    <span class="token doc-comment comment">/** 网页不显示更新通知 */</span></span>
+<span class="line">    hideWebUpdateNotification<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">boolean</span><span class="token punctuation">;</span></span>
+<span class="line">    <span class="token doc-comment comment">/** 站点通知 */</span></span>
+<span class="line">    siteNotifications<span class="token operator">?</span><span class="token operator">:</span> RemoteNotificationInfo<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span></span>
+<span class="line"><span class="token punctuation">}</span></span>
+<span class="line"></span>
+<span class="line"><span class="token keyword">type</span> <span class="token class-name">RemoteNotificationInfo</span> <span class="token operator">=</span> <span class="token punctuation">{</span></span>
+<span class="line">    <span class="token doc-comment comment">/** 通知标题 */</span></span>
+<span class="line">    title<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span></span>
+<span class="line">    <span class="token doc-comment comment">/** 通知内容 */</span></span>
+<span class="line">    message<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span></span>
+<span class="line">    <span class="token doc-comment comment">/** 通知图标，需要是PrimeVue图标列表里的className */</span></span>
+<span class="line">    icon<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span></span>
+<span class="line">    <span class="token doc-comment comment">/** 通知类型 */</span></span>
+<span class="line">    severity<span class="token operator">?</span><span class="token operator">:</span> <span class="token string">&#39;success&#39;</span> <span class="token operator">|</span> <span class="token string">&#39;info&#39;</span> <span class="token operator">|</span> <span class="token string">&#39;warn&#39;</span> <span class="token operator">|</span> <span class="token string">&#39;error&#39;</span> <span class="token operator">|</span> <span class="token string">&#39;secondary&#39;</span> <span class="token operator">|</span> <span class="token string">&#39;contrast&#39;</span><span class="token punctuation">;</span></span>
+<span class="line">    <span class="token doc-comment comment">/** 通知的ID，如果存在则此通知可以忽略 */</span></span>
+<span class="line">    ignoreId<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span></span>
+<span class="line">    <span class="token doc-comment comment">/** 阻止通知自动关闭 */</span></span>
+<span class="line">    sticky<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">boolean</span><span class="token punctuation">;</span></span>
+<span class="line">    <span class="token doc-comment comment">/** 点击通知后打开的URL */</span></span>
+<span class="line">    url<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span></span>
+<span class="line">    <span class="token doc-comment comment">/** 打开URL的按钮文本 */</span></span>
+<span class="line">    urlLabel<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span></span>
+<span class="line"><span class="token punctuation">}</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><!--[--><!--]--></div><footer class="vp-page-meta"><!----><div class="vp-meta-item git-info"><div class="vp-meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="vp-meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: hyperzlib@outlook.com">Lex Lim</span><!----><!--]--><!--]--></span></div></div></footer><!----><!--[--><!--]--></main><!--]--></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/assets/app-CAXEhSqr.js" defer></script>
+  </body>
+</html>
