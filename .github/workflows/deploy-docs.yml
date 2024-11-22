@@ -42,6 +42,10 @@ jobs:
           pnpm run docs:build
           > docs/.vuepress/dist/.nojekyll
 
+      - name: 复制图片
+        run: |-
+          cp -r docs/images docs/.vuepress/dist
+
       - name: 部署文档
         uses: JamesIves/github-pages-deploy-action@v4
         with:
