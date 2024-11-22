@@ -9,11 +9,11 @@ export default defineUserConfig({
   description: '郊狼战败惩罚控制器',
 
   head: [
-    ['link', { rel: 'icon', href: '/public/favicon.png' }]
+    ['link', { rel: 'icon', href: '/images/favicon.png' }]
   ],
 
   theme: defaultTheme({
-    logo: 'public/screenshot-widget.png',
+    logo: 'images/screenshot-widget.png',
     navbar: [
       '/',
       '/get-started',
